@@ -24,6 +24,7 @@ class Job {
             ]
         ];
     }
+    
     public static function find(int $id): array{
         $foundJob = Arr::first(static::all(), function ($job) use ($id) {
             return $job['id'] == $id;
