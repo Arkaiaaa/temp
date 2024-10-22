@@ -23,8 +23,7 @@ $jobs = [
     ];
 
 Route::get('/', function () {
-    $jobs = Job::all();
-    //return view('home');
+    return view('home');
 });
 
 Route::get('/jobs', function () {
